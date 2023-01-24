@@ -100,6 +100,22 @@
             {
                 Console.WriteLine("password is not matched");
             }
+            //UC_7
+
+            PasswordRule3 password6Rule3 = new PasswordRule3();
+            Console.WriteLine("please enter the password");
+
+            string password3 = Console.ReadLine();
+
+            bool value6 = password6Rule3.validatePassWord(password3);
+            if (value6)
+            {
+                Console.WriteLine("password is matched");
+            }
+            else
+            {
+                Console.WriteLine("password is not matched");
+            }
         }
     }
 }
