@@ -36,6 +36,22 @@
             {
                 Console.WriteLine("Name is not matched");
             }
+            //UC_3
+
+            ValidEmailUC_3 validEmail3 = new ValidEmailUC_3();
+            Console.WriteLine("please enter the EmailId");
+
+            string validemail = Console.ReadLine();
+
+            bool value2 = validEmail3.validateValidEmail(validemail);
+            if (value2)
+            {
+                Console.WriteLine("Name is matched");
+            }
+            else
+            {
+                Console.WriteLine("Name is not matched");
+            }
         }
     }
 }
