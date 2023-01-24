@@ -73,10 +73,26 @@
             PasswordRule1 passWord5 = new PasswordRule1();
             Console.WriteLine("please enter the password");
 
-            string password = Console.ReadLine();
+            string password1 = Console.ReadLine();
 
-            bool value4 = passWord5.validatePassWord(password);
+            bool value4 = passWord5.validatePassWord(password1);
             if (value4)
+            {
+                Console.WriteLine("password is matched");
+            }
+            else
+            {
+                Console.WriteLine("password is not matched");
+            }
+            //UC_6
+
+            PasswordRule2 password6Rule2 = new PasswordRule2();
+            Console.WriteLine("please enter the password");
+
+            string password2 = Console.ReadLine();
+
+            bool value5 = password6Rule2.validatePassWord(password2);
+            if (value5)
             {
                 Console.WriteLine("password is matched");
             }

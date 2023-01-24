@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace RegexProblem
 {
-    internal class PasswordRule1
+    internal class PasswordRule2
     {
-        public static string REGEX_PASSWORD = "^[a-z]{1}[a-z]{7}$";
-
+         public static string REGEX_PASSWORD = "^[A-Z]{1}[a-z]{5}$";
+      
         public bool validatePassWord(string password)
         {
             return Regex.IsMatch(password, REGEX_PASSWORD);
