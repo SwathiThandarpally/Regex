@@ -68,6 +68,22 @@
             {
                 Console.WriteLine("PhoneNumber is not matched");
             }
+            //UC_5
+
+            PasswordRule1 passWord5 = new PasswordRule1();
+            Console.WriteLine("please enter the password");
+
+            string password = Console.ReadLine();
+
+            bool value4 = passWord5.validatePassWord(password);
+            if (value4)
+            {
+                Console.WriteLine("password is matched");
+            }
+            else
+            {
+                Console.WriteLine("password is not matched");
+            }
         }
     }
 }
