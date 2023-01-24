@@ -116,7 +116,7 @@
             //{
             //    Console.WriteLine("password is not matched");
             //}
-            //UC-8
+            //UC_8
 
             PasswordRule4 passwordSpecialChar = new PasswordRule4();
             Console.WriteLine("please enter the password");
@@ -131,6 +131,23 @@
             else
             {
                 Console.WriteLine("password is not matched");
+            }
+            //UC_9
+
+
+            EmailSamples allEmailId = new EmailSamples();
+            Console.WriteLine("please enter the EmailId");
+
+            string validemail = Console.ReadLine();
+
+            bool value8 = allEmailId.validateValidEmail(validemail);
+            if (value8)
+            {
+                Console.WriteLine("Email is matched");
+            }
+            else
+            {
+                Console.WriteLine("Email is not matched");
             }
         }
     }
