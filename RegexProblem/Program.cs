@@ -52,6 +52,22 @@
             {
                 Console.WriteLine("Name is not matched");
             }
+            //UC_4
+
+            MobileFormatUC_4 mobileFormat = new MobileFormatUC_4();
+            Console.WriteLine("please enter the phonenumber");
+
+            string phonenumber = Console.ReadLine();
+
+            bool value3 = mobileFormat.validatePhoneNumber(phonenumber);
+            if (value3)
+            {
+                Console.WriteLine("PhoneNumber is matched");
+            }
+            else
+            {
+                Console.WriteLine("PhoneNumber is not matched");
+            }
         }
     }
 }
