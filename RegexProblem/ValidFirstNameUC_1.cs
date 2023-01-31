@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RegexProblem
 {
-    internal class ValidFirstNameUC_1
+    public  class ValidFirstNameUC_1
     {
         public static string REGEX_VALIDFIRSTNAME = "^[A-Z]{1}[A-Z a-z ]{5}$";
 

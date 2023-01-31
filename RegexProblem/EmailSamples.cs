@@ -11,9 +11,22 @@ namespace RegexProblem
     {
         public static string REGEX_VALIDEMAIL = "^[a-z0-9][-a-z0-9._]+@([-a-z0-9]+.)+[a-z]{2,5}$";
 
-        public bool validateValidEmail(string validemail)
+        //public bool validateValidEmail(string validemail)
+        //{
+        //    return Regex.IsMatch(validemail, REGEX_VALIDEMAIL);
+        //}
+        public bool ValidateEmail(string email)
         {
-            return Regex.IsMatch(validemail, REGEX_VALIDEMAIL);
+            if (Regex.IsMatch(email, REGEX_VALIDEMAIL))
+            {
+                Console.WriteLine("Email is valid");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Email is invalid");
+                return false;
+            }
         }
     }
 }

@@ -116,39 +116,50 @@
             //{
             //    Console.WriteLine("password is not matched");
             //}
-            //UC_8
+            ////UC_8
 
-            PasswordRule4 passwordSpecialChar = new PasswordRule4();
-            Console.WriteLine("please enter the password");
+            //PasswordRule4 passwordSpecialChar = new PasswordRule4();
+            //Console.WriteLine("please enter the password");
 
-            string password4 = Console.ReadLine();
+            //string password4 = Console.ReadLine();
 
-            bool value7 = passwordSpecialChar.validatePassWord(password4);
-            if (value7)
-            {
-                Console.WriteLine("password is matched");
-            }
-            else
-            {
-                Console.WriteLine("password is not matched");
-            }
-            //UC_9
+            //bool value7 = passwordSpecialChar.validatePassWord(password4);
+            //if (value7)
+            //{
+            //    Console.WriteLine("password is matched");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("password is not matched");
+            //}
+            ////UC_9
 
 
-            EmailSamples allEmailId = new EmailSamples();
-            Console.WriteLine("please enter the EmailId");
+            //EmailSamples allEmailId = new EmailSamples();
+            //Console.WriteLine("please enter the EmailId");
 
-            string validemail = Console.ReadLine();
+            //string validemail1 = Console.ReadLine();
 
-            bool value8 = allEmailId.validateValidEmail(validemail);
-            if (value8)
-            {
-                Console.WriteLine("Email is matched");
-            }
-            else
-            {
-                Console.WriteLine("Email is not matched");
-            }
+            //bool value8 = allEmailId.validateValidEmail(validemail);
+            //if (value8)
+            //{
+            //    Console.WriteLine("Email is matched");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Email is not matched");
+            //}
+
+            EmailSamples emailvalidation = new EmailSamples();
+            emailvalidation.ValidateEmail("abc@yahoo.com");
+            emailvalidation.ValidateEmail("abc-100@yahoo.com");
+            emailvalidation.ValidateEmail("abc.100@yahoo.com");
+            emailvalidation.ValidateEmail("abc111@abc.com");
+            emailvalidation.ValidateEmail("abc-100@abc.net");
+            emailvalidation.ValidateEmail("abc.100@abc.com.au");
+            emailvalidation.ValidateEmail("abc@1.com");
+            emailvalidation.ValidateEmail("abc@gmail.com.com");
+            emailvalidation.ValidateEmail("abc+100@gmail.com");
         }
     }
 }
